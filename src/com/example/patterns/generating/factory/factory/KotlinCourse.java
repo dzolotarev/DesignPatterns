@@ -1,0 +1,19 @@
+package com.example.patterns.generating.factory.factory;
+
+import com.example.patterns.generating.factory.developers.Developer;
+import com.example.patterns.generating.factory.developers.KotlinDeveloper;
+
+/**
+ * Created by Denis Zolotarev on 03.11.2023.
+ */
+public class KotlinCourse extends ProgrammingCourse {
+    @Override
+    public Developer createDeveloper() {
+        return new KotlinDeveloper();
+    }
+
+    @Override
+    public void educateStudent() {
+        super.educateStudent();
+    }
+}
